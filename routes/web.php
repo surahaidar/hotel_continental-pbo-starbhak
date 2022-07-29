@@ -14,5 +14,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('main');
 });
+Route::get('/kamar', [KamarController::class, 'index'])->name('kamar');
+Route::get('/fasilitas', [FasilitasController::class, 'index'])->name('fasilitas');
+Route::get('/fasilitasumum', [FasilitasumumController::class, 'index'])->name('fasilitasumum');
+
+// login
+// akhir-login
+
+// kamar
+// akhir-kamar
+
+// fasilitas
+// akhir-kamar
+
+// fasilitasumum
+// akhir-fasilitasumum
