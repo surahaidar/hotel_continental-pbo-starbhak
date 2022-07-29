@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Kamar;
-use App\Http\Requests\StoreKamarRequest;
-use App\Http\Requests\UpdateKamarRequest;
+use App\Models\Home;
+use App\Http\Requests\StoreHomeRequest;
+use App\Http\Requests\UpdateHomeRequest;
 
-class KamarController extends Controller
+class HomeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,7 @@ class KamarController extends Controller
      */
     public function index()
     {
-        $data = Kamar::all();
-        return view('admin.kamar.index',compact('data'));
+        //
     }
 
     /**
@@ -32,10 +31,10 @@ class KamarController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreKamarRequest  $request
+     * @param  \App\Http\Requests\StoreHomeRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreKamarRequest $request)
+    public function store(StoreHomeRequest $request)
     {
         //
     }
@@ -43,10 +42,10 @@ class KamarController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Kamar  $kamar
+     * @param  \App\Models\Home  $home
      * @return \Illuminate\Http\Response
      */
-    public function show(Kamar $kamar)
+    public function show(Home $home)
     {
         //
     }
@@ -54,10 +53,10 @@ class KamarController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Kamar  $kamar
+     * @param  \App\Models\Home  $home
      * @return \Illuminate\Http\Response
      */
-    public function edit(Kamar $kamar)
+    public function edit(Home $home)
     {
         //
     }
@@ -65,11 +64,11 @@ class KamarController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateKamarRequest  $request
-     * @param  \App\Models\Kamar  $kamar
+     * @param  \App\Http\Requests\UpdateHomeRequest  $request
+     * @param  \App\Models\Home  $home
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateKamarRequest $request, Kamar $kamar)
+    public function update(UpdateHomeRequest $request, Home $home)
     {
         //
     }
@@ -77,10 +76,10 @@ class KamarController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Kamar  $kamar
+     * @param  \App\Models\Home  $home
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Kamar $kamar)
+    public function destroy(Home $home)
     {
         //
     }

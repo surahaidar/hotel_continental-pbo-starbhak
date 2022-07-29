@@ -15,7 +15,8 @@ class FasilitasController extends Controller
      */
     public function index()
     {
-        //
+        $data = Fasilitas::all();
+        return view('admin.fasilitas.fasilitas',compact('data'));
     }
 
     /**

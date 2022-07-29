@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KamarController;
+use App\Http\Controllers\FasilitasController;
+use App\Http\Controllers\FasilitasumumController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +18,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('main');
+    return view('layouts.main');
 });
+
+
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/kamar', [KamarController::class, 'index'])->name('kamar');
 Route::get('/fasilitas', [FasilitasController::class, 'index'])->name('fasilitas');
 Route::get('/fasilitasumum', [FasilitasumumController::class, 'index'])->name('fasilitasumum');
