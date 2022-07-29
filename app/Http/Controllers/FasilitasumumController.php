@@ -16,7 +16,7 @@ class FasilitasumumController extends Controller
     public function index()
     {
         $data = Fasilitasumum::all();
-        return view('admin.fasilitasumum.fasilitas',compact('data'));
+        return view('admin.fasilitasumum.fasilitasumum',compact('data'));
     }
 
     /**
