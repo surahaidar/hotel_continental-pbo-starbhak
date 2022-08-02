@@ -81,11 +81,11 @@
                 
                 <ul class="navbar-nav">
                     {{-- <h4 class="text-center">Haloo {{ auth()->user()->nama }} ! </h4> --}}
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link " href="/home">
                             <i class="ni ni-single-02 text-yellow"></i> Home
                         </a>
-                    </li>
+                    </li> --}}
                     <li class="nav-item">
                         <a class="nav-link " href="/kamar">
                             <i class="ni ni-single-02 text-yellow"></i> Kamar

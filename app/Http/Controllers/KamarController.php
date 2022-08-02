@@ -26,7 +26,7 @@ class KamarController extends Controller
      */
     public function create()
     {
-        //
+        return view('tambahkamar');
     }
 
     /**
@@ -37,7 +37,14 @@ class KamarController extends Controller
      */
     public function store(StoreKamarRequest $request)
     {
-        //
+        $this->validate($request,[
+            'no_kamar'=>'required',
+            'harga'=>'required',
+            'kapasitas'=>'required',
+            'tipe'=>'required'
+        ]);
+        Kamar::create($request->all());
+        return redirect('/kamar');
     }
 
     /**

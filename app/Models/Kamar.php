@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Kamar extends Model
 {
-    use HasFactory;
+    protected $table = 'kamars';
+    protected $fillable = ['no_kamar', 'harga', 'kapasitas', 'tipe'];
 }
