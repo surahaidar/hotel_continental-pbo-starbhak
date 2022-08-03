@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KamarController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\FasilitasController;
 use App\Http\Controllers\FasilitasumumController;
 
@@ -33,6 +34,8 @@ Route::get('/fasilitasumum', [FasilitasumumController::class, 'index'])->name('f
 // akhir-admin
 
 // login
+Route::get('/login', [LoginController::class, 'index'])->name('login');
+
 // akhir-login
 
 // kamar

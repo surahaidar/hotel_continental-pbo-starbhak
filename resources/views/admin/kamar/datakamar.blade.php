@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-<h1 class="text-center">Kamar</h1>
+<h1 class="text-center">Data Kamar</h1>
 
 <a href="/kamar/tambahkamar" class="btn btn-success mt-5 mb-4">tambah</a>
 <table class="table table-light table-striped">
