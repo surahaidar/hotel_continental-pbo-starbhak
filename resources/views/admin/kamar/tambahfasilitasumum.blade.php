@@ -10,7 +10,7 @@
                     <form method="POST" action="/insertdatakamar">
                       @csrf
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">No Kamar</label>
+                          <label for="exampleInputEmail1" class="form-label">nama barang</label>
                           <input type="text" name="no_kamar" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
                           {{-- @error('namaguru')
@@ -21,7 +21,7 @@
 
                         </div>
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Harga Kamar</label>
+                          <label for="exampleInputEmail1" class="form-label">harga barang</label>
                           <input type="text" name="harga" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
                           {{-- @error('namaguru')
@@ -32,7 +32,7 @@
 
                         </div>
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Kapasitas Kamar</label>
+                          <label for="exampleInputEmail1" class="form-label">Kapasitas barang</label>
                           <input type="text" name="kapasitas" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
                           {{-- @error('namaguru')
@@ -43,9 +43,9 @@
                         </div>
 
                         <select class="form-select" name="tipe" aria-label="Default select example" style="width: 100%">
-                            <option selected>Pilih Tipe Kamar</option>
-                            <option value="1">Superior</option>
-                            <option value="2">Deluxe</option>
+                            <option selected>Pilih Tipe barang</option>
+                            <option value="1">ac</option>
+                            <option value="2">sofa</option>
                           </select>
 
                         
