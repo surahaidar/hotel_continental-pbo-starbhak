@@ -26,7 +26,7 @@ class KamarController extends Controller
      */
     public function create()
     {
-        return view('tambahkamar');
+        return view('kamar');
     }
 
     /**
@@ -35,7 +35,7 @@ class KamarController extends Controller
      * @param  \App\Http\Requests\StoreKamarRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreKamarRequest $request)
+    public function store(Request $request)
     {
         $this->validate($request,[
             'no_kamar'=>'required',
@@ -44,7 +44,7 @@ class KamarController extends Controller
             'tipe'=>'required'
         ]);
         Kamar::create($request->all());
-        return redirect('/kamar');
+        return redirect()->rout('kamar.index');
     }
 
     /**
@@ -66,7 +66,7 @@ class KamarController extends Controller
      */
     public function edit(Kamar $kamar)
     {
-        //
+        
     }
 
     /**

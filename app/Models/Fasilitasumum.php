@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Fasilitasumum extends Model
 {
-    use HasFactory;
-}
+    protected $table = 'fasilitasumums';
+    protected $fillable = ['ac', 'sofa', 'tv', 'shower'];}

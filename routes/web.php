@@ -40,8 +40,10 @@ Route::get('/login', [LoginController::class, 'index'])->name('login');
 
 // kamar
 Route::get('/tambahkamar', [KamarController::class, 'index'])->name('tambahkamar');
-Route::get('/insertdatakamar', [KamarController::class, 'index'])->name('insertdatakamar');
+Route::POST('/insertdatakamar', [KamarController::class, 'index'])->name('insertdatakamar');
+Route::resource('/kamar', KamarController::class);
 // Route::get('/', [KamarController::class, 'index'])->name('');
+
 
 // akhir-kamar
 
