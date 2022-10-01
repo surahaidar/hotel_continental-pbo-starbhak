@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-<h1 class="text-center">fasilitas kamar</h1>
+<h1 class="text-center">fasilitas umum</h1>
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
     tambah
   </button>  
@@ -50,7 +50,7 @@
         </div>
         <div class="modal-body">
             <div class="container">
-                <h1 class="text-center mb-4">Tambah Kamar</h1>
+                <h1 class="text-center mb-4">Tambah barang</h1>
                   <div class="row justify-content-center">
                       <div class="col-8">
                           <div class="card">
@@ -58,7 +58,7 @@
                                   <form method="POST" action="/insertdatakamar">
                                     @csrf
                                       <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">No Kamar</label>
+                                        <label for="exampleInputEmail1" class="form-label">No barang</label>
                                         <input type="text" name="no_kamar" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               
                                         {{-- @error('namaguru')
@@ -69,7 +69,7 @@
               
                                       </div>
                                       <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">Harga Kamar</label>
+                                        <label for="exampleInputEmail1" class="form-label">Harga barang</label>
                                         <input type="text" name="harga" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               
                                         {{-- @error('namaguru')
@@ -80,7 +80,7 @@
               
                                       </div>
                                       <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">Kapasitas Kamar</label>
+                                        <label for="exampleInputEmail1" class="form-label">Kapasitas barang</label>
                                         <input type="text" name="kapasitas" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               
                                         {{-- @error('namaguru')

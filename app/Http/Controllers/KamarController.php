@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Kamar;
 use App\Http\Requests\StoreKamarRequest;
 use App\Http\Requests\UpdateKamarRequest;
-
+use Illuminate\Http\Request;
 class KamarController extends Controller
 {
     /**
@@ -44,7 +44,8 @@ class KamarController extends Controller
             'tipe'=>'required'
         ]);
         Kamar::create($request->all());
-        return redirect()->rout('kamar.index');
+        // dd($request->all());
+        return redirect()->route('kamar.index');
     }
 
     /**

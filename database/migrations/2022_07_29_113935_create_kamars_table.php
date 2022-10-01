@@ -15,7 +15,7 @@ class CreateKamarsTable extends Migration
     {
         Schema::create('kamars', function (Blueprint $table) {
             $table->id();
-            $table->string("no_kamar")->unique();
+            $table->string("no_kamar");
             $table->string("harga");
             $table->string("kapasitas");
             $table->enum("tipe",["Superior","Deluxe"]);

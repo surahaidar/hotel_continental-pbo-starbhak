@@ -15,8 +15,8 @@ class CreateFasilitasTable extends Migration
     {
         Schema::create('fasilitas', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('kamar_id');
-            $table->string('nama');
+            // $table->foreignId('kamar_id');
+            $table->string('nama_fasilitas');
             $table->timestamps();
         });
     }
